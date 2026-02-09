@@ -1,0 +1,323 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Bing He</title>
+
+    <meta name="author" content="Bing He">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    
+  </head>
+
+  <body>
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr style="padding:0px">
+              <td style="padding:2.5%;width:63%;vertical-align:middle">
+                <p class="name" style="text-align: center;">
+                  Bing He
+                </p>
+                <p>
+    I'm a PhD student at Shanghai Jiao Tong University, where I am fortunate to be advised by Li Song. My research interests lie at the intersection of 3D reconstruction, generative modeling, and rigging, with a specific focus on advancing state-of-the-art 3D vision tasks.
+    My work has been recognized at premier venues including ICCV, NeurIPS, and ICLR. Most recently, I developed <a href="https://hebing-sjtu.github.io/SurfSplat-website/">SurfSplat</a>, which I will be presenting at <a href="https://iclr.cc/">ICLR 2026</a> in Rio de Janeiro this April.
+    I am currently seeking research internship opportunities in the United States for 2026 (with a preference for California). If you're interested in collaborating or discussing my work, please feel free to reach out via email or DM.
+                </p>
+                <p style="text-align:center">
+                  <a href="mailto:sandwich_theorem@sjtu.edu.cn">Email</a> &nbsp;/&nbsp;
+                  <a href="data/binghe_cv.pdf">CV</a> &nbsp;/&nbsp;
+                  <a href="https://scholar.google.com/citations?user=d2FCOFEAAAAJ&hl=en">Scholar</a> &nbsp;/&nbsp;
+                  <a href="https://www.linkedin.com/in/he-bing-2aab86346/">LinkedIn</a> &nbsp;/&nbsp;
+                  <a href="https://github.com/hebing-sjtu">Github</a>
+                </p>
+              </td>
+              <td style="padding:2.5%;width:37%;max-width:37%">
+                <a href="images/binghe.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/JonBarron.jpg" class="hoverZoomLink"></a>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+              <td style="padding:16px;width:100%;vertical-align:middle">
+                <h2>Research</h2>
+                <p>
+                  I'm interested in computer vision, generative AI, and image processing. Most of my research is about inferring the physical world (shape, motion, color, light, etc) from images, usually with gaussian splatting. Some papers are <span class="highlight">highlighted</span>.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+<tr onmouseout="surfsplat_stop()" onmouseover="surfsplat_start()" bgcolor="#ffffd0">
+  <td style="padding:16px;width:20%;vertical-align:middle">
+    <div class="one">
+      <div class="two" id='surfsplat_image'>
+        <img src='images/surfsplat_after.jpg' width=100%>
+      </div>
+      <img src='images/surfsplat_before.jpg' width=100%>
+    </div>
+    <script type="text/javascript">
+      function surfsplat_start() {
+        document.getElementById('surfsplat_image').style.opacity = "1";
+      }
+
+      function surfsplat_stop() {
+        document.getElementById('surfsplat_image').style.opacity = "0";
+      }
+      surfsplat_stop()
+    </script>
+  </td>
+  <td style="padding:8px;width:80%;vertical-align:middle">
+    <a href="https://hebing-sjtu.github.io/SurfSplat-website/">
+      <span class="papertitle">SurfSplat: Conquering Feedforward 2D Gaussian Splatting with Surface Continuity Priors</span>
+    </a>
+    <br>
+    <strong>Bing He</strong>, 
+    <a href="https://g-1nonly.github.io/">Jingnan Gao</a>, 
+    <a href="https://github.com/UnoC-727">Yunuo Chen</a>, <br>
+    Ning Cao, 
+	  Gang Chen, 
+    Zhengxue Cheng, <br>
+    Li Song, 
+    Wenjun Zhang 
+    <br>
+    <em>ICLR</em>, 2026
+    <br>
+    <a href="https://hebing-sjtu.github.io/SurfSplat-website/">project page</a>
+    /
+    <a href="https://arxiv.org/abs/2602.02000">arXiv</a>
+    <p></p>
+    <p>
+	Reconstructing 3D scenes with feed-forward 2DGS! 🏄🏻 By combining neural networks with graphics priors, we’ve solved common convergence problems and persistent visual artifacts. The result? Crystal-clear reconstructions that hold up even when you zoom in.
+    </p>
+  </td>
+</tr>
+
+<tr onmouseout="cam4lic_stop()" onmouseover="cam4lic_start()">
+  <td style="padding:16px;width:20%;vertical-align:middle">
+    <div class="one">
+      <div class="two" id='cam4lic_image'>
+        <img src='images/cam4lic_after.jpg' width=100%>
+      </div>
+      <img src='images/cam4lic_before.jpg' width=100%>
+    </div>
+    <script type="text/javascript">
+      function cam4lic_start() {
+        document.getElementById('cam4lic_image').style.opacity = "1";
+      }
+
+      function cam4lic_stop() {
+        document.getElementById('cam4lic_image').style.opacity = "0";
+      }
+      cam4lic_stop()
+    </script>
+  </td>
+  <td style="padding:8px;width:80%;vertical-align:middle">
+    <a href="https://arxiv.org/pdf/2508.02192">
+      <span class="papertitle">Content-Aware Mamba for Learned Image Compression</span>
+    </a>
+    <br>
+    <strong>Bing He</strong>
+    <a href="https://g-1nonly.github.io/">Jingnan Gao</a>,
+    <a href="https://github.com/UnoC-727">Yunuo Chen</a>, <br>
+    Ning Cao, 
+	  Gang Chen, 
+    Zhengxue Cheng, <br>
+    Li Song, 
+    Wenjun Zhang 
+    <br>
+    <em>ICLR</em>, 2026
+    <br>
+    <a href="https://arxiv.org/pdf/2508.02192">arXiv</a>
+    <p></p>
+    <p>
+	Content-Aware Mamba meets Learned Image Compression! 🐍 While standard SSMs are often restricted by rigid, content-agnostic scans, our latest work, CMIC, introduces Content-Aware Mamba (CAM).
+  By replacing fixed raster scans with a content-adaptive token permutation strategy and injecting global priors to break sequential dependency, we’ve pushed the boundaries of efficiency and performance. The result? A state-of-the-art LIC model that surpasses VTM-21.0 by up to 21.34% in BD-rate across standard benchmarks.
+    </p>
+  </td>
+</tr>
+
+
+<tr onmouseout="h3d_stop()" onmouseover="h3d_start()" bgcolor="#ffffd0">
+  <td style="padding:16px;width:20%;vertical-align:middle">
+    <div class="one">
+      <div class="two" id='h3d_image'>
+        <img src='images/h3d_after.jpg' width=100%>
+      </div>
+      <img src='images/h3d_before.jpg' width=100%>
+    </div>
+    <script type="text/javascript">
+      function h3d_start() {
+        document.getElementById('h3d_image').style.opacity = "1";
+      }
+
+      function h3d_stop() {
+        document.getElementById('h3d_image').style.opacity = "0";
+      }
+      h3d_stop()
+    </script>
+  </td>
+  <td style="padding:8px;width:80%;vertical-align:middle">
+    <a href="https://github.com/hebing-sjtu/H3D-DGS">
+      <span class="papertitle">H3D-DGS: Exploring Heterogeneous 3D Motion Representation for Deformable 3D Gaussian Splatting</span>
+    </a>
+    <br>
+    <strong>Bing He</strong>, 
+    <a href="https://github.com/UnoC-727">Yunuo Chen</a>, <br>
+    Guo Lu, 
+	  Qi Wang, 
+    Qunshan Gu, <br>
+    Rong Xie, 
+    Li Song, 
+    Wenjun Zhang
+    <br>
+    <em>NeurIPS</em>, 2025
+    <br>
+    <a href="https://github.com/hebing-sjtu/H3D-DGS">project page</a>
+    /
+    <a href="https://arxiv.org/abs/2408.13036">arXiv</a>
+    <p></p>
+    <p>
+	Exploring heterogeneous 3D motion representation for deformable 3D Gaussian Splatting! ⚡ By bridging neural networks with graphics priors, we’ve significantly accelerated the training process and achieved robust results—even on datasets with extreme, high-frequency motion. H3D-DGS makes deforming scenes faster and more stable than ever.
+    </p>
+  </td>
+</tr>
+
+
+<tr onmouseout="kd4lic_stop()" onmouseover="kd4lic_start()">
+  <td style="padding:16px;width:20%;vertical-align:middle">
+    <div class="one">
+      <div class="two" id='kd4lic_image'>
+        <img src='images/kd4lic_after.jpg' width=100%>
+      </div>
+      <img src='images/kd4lic_before.jpg' width=100%>
+    </div>
+    <script type="text/javascript">
+      function kd4lic_start() {
+        document.getElementById('kd4lic_image').style.opacity = "1";
+      }
+
+      function kd4lic_stop() {
+        document.getElementById('kd4lic_image').style.opacity = "0";
+      }
+      kd4lic_stop()
+    </script>
+  </td>
+  <td style="padding:8px;width:80%;vertical-align:middle">
+    <a href="https://openaccess.thecvf.com/content/ICCV2025/html/Chen_Knowledge_Distillation_for_Learned_Image_Compression_ICCV_2025_paper.html">
+      <span class="papertitle">H3D-DGS: Exploring Heterogeneous 3D Motion Representation for Deformable 3D Gaussian Splatting</span>
+    </a>
+    <br>
+
+    <a href="https://github.com/UnoC-727">Yunuo Chen</a>
+    Zezheng Lyu, 
+    <strong>Bing He</strong>, <br>
+    Ning Cao, 
+	  Gang Chen, 
+    Guo Lu, 
+    Wenjun Zhang
+    <br>
+    <em>ICCV</em>, 2025 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
+    <br>
+    <a href="https://openaccess.thecvf.com/content/ICCV2025/html/Chen_Knowledge_Distillation_for_Learned_Image_Compression_ICCV_2025_paper.html">arXiv</a>
+    <p></p>
+    <p>
+	 Knowledge distillation meets learned image compression! We’ve developed a streamlined framework that delivers a smaller, faster model with significantly reduced computational overhead, all while maintaining state-of-the-art performance.
+    </p>
+  </td>
+</tr>
+
+<tr onmouseout="ieir4mvc_stop()" onmouseover="ieir4mvc_start()">
+  <td style="padding:16px;width:20%;vertical-align:middle">
+    <div class="one">
+      <div class="two" id='eir4mvc_image'>
+        <img src='images/ieir4mvc_after.jpg' width=100%>
+      </div>
+      <img src='images/ieir4mvc_before.jpg' width=100%>
+    </div>
+    <script type="text/javascript">
+      function ieir4mvc_start() {
+        document.getElementById('eir4mvc_image').style.opacity = "1";
+      }
+
+      function ieir4mvc_stop() {
+        document.getElementById('eir4mvc_image').style.opacity = "0";
+      }
+      ieir4mvc_stop()
+    </script>
+  </td>
+  <td style="padding:8px;width:80%;vertical-align:middle">
+    <a href="https://openaccess.thecvf.com/content/ICCV2025/html/Chen_Knowledge_Distillation_for_Learned_Image_Compression_ICCV_2025_paper.html">
+      <span class="papertitle">Implicit-explicit Integrated Representations for Multi-view Video Compression</span>
+    </a>
+    <br>
+
+    Chen Zhu, 
+    Guo Lu, 
+    <strong>Bing He</strong>, <br>
+    Rong Xie, 
+	  Li Song 
+    <br>
+    <em>TIP</em>, 2025 
+    <br>
+    <a href="https://github.com/zc-lynen/MV-IERV">project page</a>
+    /
+    <a href="https://ieeexplore.ieee.org/abstract/document/10871929">arXiv</a>
+    <p></p>
+    <p>
+	 Multi-view video compression is a major bottleneck for the future of VR. Our new framework introduces an implicit-explicit integrated representation that tackles this head-on.
+    </p>
+  </td>
+</tr>
+
+
+          </tbody></table>
+
+          
+					<table style="width:100%; margin:0 auto; border:0; border-spacing:0; padding:16px;"><tbody>
+            <tr>
+              <td>
+                <h2>Miscellanea</h2>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+
+            <tr>
+              <td align="center" style="padding:16px;width:20%;vertical-align:middle">
+						     <div class="colored-box" style="background-color: #aaba9e;">
+								 <h2>Recorded Talks</h2>
+								 </div>
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:center">
+                I'm currently preparing a talk to introduce our SurfSplat. Follow me for the latest updates.
+                <!-- <a href="https://www.youtube.com/watch?v=hFlF33JZbA0">Radiance Fields and the Future of Generative Media, 2025</a><br>				   -->
+              </td>
+            </tr>
+
+            <tr>
+              <td align="center" style="padding:16px;width:20%;vertical-align:middle">
+						     <div class="colored-box" style="background-color: #c6b89e;">
+								 <h2>Academic Service</h2>
+								 </div>
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:center">
+                <a href="https://eccv.ecva.net/">Reviewer, ECCV 2026</a>
+                <br>
+                <a href="https://cvpr.thecvf.com/">Reviewer, CVPR 2026</a>
+                <br>
+                <a href="https://iclr.cc/">Reviewer, ICLR 2026</a>
+                <br>
+              </td>
+            </tr>
+
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
